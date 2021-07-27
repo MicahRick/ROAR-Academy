@@ -30,7 +30,7 @@ for x in range(a_arr.shape[0]):
     for y in range(a_arr.shape[1]):
             func_value[x, y] = penalty(a_arr[x, y], b_arr[x, y])
 
-ax2.plot_surface(a_arr, b_arr, func_value, color = 'red', alpha = 0.8)
+ax2.plot_surface(a_arr, b_arr, func_value, color = 'red', alpha = 0.1)
 ax2.set_xlabel('a parameter')
 ax2.set_ylabel('b parameter')
 ax2.set_zlabel('f(a, b)')
